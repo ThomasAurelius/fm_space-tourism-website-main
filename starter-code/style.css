@@ -362,12 +362,26 @@ section {
 	opacity: 1;
 }
 
+.nav-header {
+	justify-content: space-between;
+	margin-top: 40px;
+	margin-inline: 20px;
+	align-items: center;
+	
+}
+
+.logo {
+	flex-shrink: 0;
+}
+
 .primary-navigation {
-	--gap: 8rem;
+	--gap: 2rem;
 	--underline-gap: 2rem;
 	list-style: none;
-	padding: 0;
+	padding: 20px 100px 20px 160px;
 	margin: 0;
+	background-color: hsl(var(--clr-accent)/.08);
+	backdrop-filter: blur(10px);
 }
 
 .primary-navigation a {
@@ -378,6 +392,11 @@ section {
 	font-weight: 700;
 	margin-right: 10px;
 	color: hsl(var(--clr-white) / 0.25);
+}
+
+.mobile-nav-toggle {
+	margin: 20px 20px 0 0;
+	display: none;
 }
 
 .underline-indicators > * {
@@ -455,4 +474,107 @@ section {
 .numbered-indicators > *:hover,
 .numbered-indicators > *:focus {
 	outline: 1px solid hsl(var(--clr-white));
+}
+
+/* ----------- */
+/* HOME        */
+/* ----------- */
+
+body {
+	background-image: url('./assets/home/background-home-desktop.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.home-container {
+	grid-template-columns: 1fr 1fr;
+	margin-top:30vh;
+}
+
+.home-text {
+	text-align: left;
+
+}
+
+.home-text p {
+	margin-top: 40px;
+	max-width: 450px;
+	line-height: 1.6em;
+}
+
+/* ---------------- */
+/* Media Q - tablet */
+/* ---------------- */
+
+@media (max-width: 768px) {
+	body {
+		background-image: url('./assets/home/background-home-tablet.jpg');
+	}
+
+	.nav-header {
+		margin-top: 0
+	}
+
+	.home-text {
+		text-align: center;
+	}
+
+	.primary-navigation {
+		padding-inline: 40px;
+	}
+
+	.primary-navigation span {
+		display: none;
+	}
+
+	.primary-navigation a {
+		font-size: .9em;
+	}
+
+	.home-container {
+		grid-template-columns: 1fr;
+		margin-top: 60px;
+	}
+
+	.home-text {
+		margin: 0 auto;
+	}
+
+	.large-button {
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 650px) {
+	.logo {
+		padding: 10px 0 0 10px;
+	}
+	.primary-navigation {
+		display: none;
+	}
+	.mobile-nav-toggle {
+		display: block;
+	}
+
+	.home-text {
+		text-align: center;
+	}
+
+.home-text h1 {
+	font-size: var(--fs-400);
+}
+	.home-text span{
+		text-align: center;
+		font-size: var(--fs-800);
+	}
+	.logo {
+		margin-top: 15px;
+	}
+}
+@media (max-width: 375px) {
+	
+	body {
+		background-image: url('./assets/home/background-home-mobile.jpg');
+	}
 }
