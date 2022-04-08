@@ -381,7 +381,14 @@ section {
 	padding: 20px 100px 20px 160px;
 	margin: 0;
 	background-color: hsl(var(--clr-accent)/.08);
-	backdrop-filter: blur(10px);
+	
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+	.primary-navigation {
+		background: hsl(var(--clr-white) / 0.05);
+		backdrop-filter: blur(1.5rem);
+	}
 }
 
 .primary-navigation a {
@@ -395,8 +402,16 @@ section {
 }
 
 .mobile-nav-toggle {
-	margin: 20px 20px 0 0;
 	display: none;
+	background-color: transparent;
+	background-image: url('./assets/shared/icon-hamburger.svg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;;
+	margin: 20px 20px 0 0;
+	border: none;
+	width: 30px;
+	height: 30px;
 }
 
 .underline-indicators > * {
@@ -418,6 +433,7 @@ section {
 	border: none;
 	--gap: 3em;
 	color: hsl(var(--clr-accent));
+	background-color: transparent;
 }
 
 .tab-buttons > button:hover,
@@ -503,6 +519,45 @@ body {
 	line-height: 1.6em;
 }
 
+/* ------------------ */
+/* Destination        */
+/* ------------------ */
+.destination-container {
+	grid-template-columns: 1fr 1fr ;
+	gap: 2rem;
+	width: 90vw;
+}
+.destination-title {
+	margin-top: 50px;
+	margin-bottom: 40px;
+	
+}
+
+.destination-title span {
+	color: hsl(var(--clr-white) / 0.25);
+	font-weight: 700;
+}
+
+.destination-name {
+	margin-block: 20px;
+}
+
+.destination-img {
+	margin: 60px auto;
+	background-image: url('./assets/destination/image-moon.png');
+	background-position: center;
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
+
+.destination-facts {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-evenly;
+	gap: 3rem;
+}
+
 /* ---------------- */
 /* Media Q - tablet */
 /* ---------------- */
@@ -547,18 +602,60 @@ body {
 }
 
 @media (max-width: 650px) {
+
+	.nav-header {
+		position: relative;
+		
+	}
+
+	.primary-navigation li span {
+		display: inline;
+		color: hsl(var(--clr-white));
+	}
+
+	
+
+	.primary-navigation.underline-indicators>.active {
+		border: 0;
+	}
+
+	.primary-navigation {
+		--gap: 1rem;
+		--underline-gap: 1rem;
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		width: 60vw;
+		height: 100vh;
+		inset: 0 0 0 40%;
+		z-index: 2;
+		padding-top: 150px;
+		transform: translateX(100%);
+		transition: transform .4s ease;
+	}
+
+	.primary-navigation[data-visible="true"] {
+		transform: translateX(0)
+	}
+
 	.logo {
 		padding: 10px 0 0 10px;
+		position: absolute;
+		top: 20px;
+		left: 20px;
 	}
-	.primary-navigation {
-		display: none;
-	}
+
 	.mobile-nav-toggle {
+		position: fixed;
+		top: 30px;
+		right: 30px;
 		display: block;
+		z-index: 3
 	}
 
 	.home-text {
 		text-align: center;
+		margin-top: 100px;
 	}
 
 .home-text h1 {
@@ -577,4 +674,6 @@ body {
 	body {
 		background-image: url('./assets/home/background-home-mobile.jpg');
 	}
+
+	
 }
