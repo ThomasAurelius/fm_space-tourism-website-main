@@ -372,7 +372,8 @@ section {
 
 .logo {
 	flex-shrink: 0;
-	margin-left: 20px;
+	margin-left: 30px;
+	order: -2;
 }
 
 .primary-navigation {
@@ -382,13 +383,10 @@ section {
 	padding: 20px 100px 20px 120px;
 	margin: 0;
 	background-color: hsl(var(--clr-accent)/.08);
+	
 }
 
 
-
-.logo {
-	order: -2;
-}
 
 @supports (backdrop-filter: blur(1rem)) {
 	.primary-navigation {
@@ -514,9 +512,8 @@ section {
 .home-container {
 	margin-top: 0;
 	grid-template-columns: 1fr 1fr;
-	margin-top: 20vh;
+	margin-top: 15vh;
 	padding-bottom: 50px;
-	padding-bottom: 25vh;
 }
 
 .home-text {
@@ -529,7 +526,7 @@ section {
 .home-text p {
 	margin-top: 40px;
 	max-width: 450px;
-	line-height: 1.6em;
+	line-height: 1.6;
 }
 
 /* ------------------ */
@@ -548,7 +545,7 @@ section {
 	gap: 2rem;
 	width: 90vw;
 	padding: 0;
-	padding-bottom: 15vh;
+	
 }
 .destination-title {
 	margin-top: 50px;
@@ -572,8 +569,8 @@ section {
 	background-image: url('./assets/destination/image-moon.png');
 	background-position: center;
 	background-size: cover;
-	width: 400px;
-	height: 400px;
+	width: 300px;
+	height: 300px;
 	}
 
 #mars .destination-img {
@@ -581,8 +578,8 @@ section {
 	background-image: url('./assets/destination/image-mars.png');
 	background-position: center;
 	background-size: cover;
-	width: 400px;
-	height: 400px;
+	width: 300px;
+	height: 300px;
 }
 
 #europa .destination-img {
@@ -590,8 +587,8 @@ section {
 	background-image: url('./assets/destination/image-europa.png');
 	background-position: center;
 	background-size: cover;
-	width: 400px;
-	height: 400px;
+	width: 300px;
+	height: 300px;
 }
 
 #titan .destination-img {
@@ -599,8 +596,8 @@ section {
 	background-image: url('./assets/destination/image-titan.png');
 	background-position: center;
 	background-size: cover;
-	width: 400px;
-	height: 400px;
+	width: 300px;
+	height: 300px;
 }
 
 
@@ -620,13 +617,6 @@ section {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-}
-
-.crew-title-container {
-	
-	width: 90vw;
-	padding: 0;
-	
 }
 
 .crew-text {
@@ -664,31 +654,6 @@ section {
 	background-position: center center;
 }
 
-.tech-container {
-	grid-template-columns: 1fr 3fr 3fr;
-	gap: 2rem;
-	align-items: center;
-	padding: 0;
-	width: 100%;
-}
-
-.tech-title-container {
-	margin-left: 20px;
-}
-
-.tech-title {
-	margin-top: 50px;
-	margin-bottom: 40px;
-
-}
-
-.tech-title span {
-	color: hsl(var(--clr-white) / 0.25);
-	font-weight: 700;
-}
-
-
-
 .landscape {
 	display: none;
 }
@@ -697,6 +662,10 @@ section {
 	max-width: 45vw;
 }
 
+.tech-container {
+	grid-template-columns: 1fr 3fr 3fr;
+	align-items: center;
+}
 
 .numbered-indicators {
 	margin:0 auto;
@@ -776,15 +745,13 @@ section {
 		background-size: cover;
 		background-position: center center;
 	}
+	.destination-title {
+		text-align: center;
+	}
 
 	.destination-container {
 		grid-template-columns: 1fr;
 		margin-top: 40px;
-		padding-bottom: 0;
-	}
-
-	.destination-title {
-		text-align: center;
 	}
 
 	.destination-text {
@@ -827,23 +794,22 @@ section {
 		max-width: 80vw;
 	}
 
+	.crew-text h3 {
+		font-size: 3rem;
+	}
+
 	.dot-indicators {
 		justify-content: center;		
 	}
 
 	.bg-tech-container {
 		background-image: url('./assets/technology/background-technology-tablet.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center center;
 	}
+
+	
 
 	.tech-container {			
 		flex-direction: column;
-	}
-
-	.tech-title {
-		text-align: center;
 	}
 
 	.portrait {
@@ -853,7 +819,7 @@ section {
 	.landscape {
 		display: block;
 		order: 1;
-		width: 100vw;
+		width: 100%;
 	}
 
 	.numbered-indicators {
@@ -878,12 +844,9 @@ section {
 		margin-bottom: 50px;
 	}
 
-	.tech-container {
-		margin: 0;
-		width: 100%;
+	.tech-img {
+		width: 100%
 	}
-
-	
 }
 
 @media (max-width: 650px) {
@@ -922,10 +885,10 @@ section {
 	}
 
 	.logo {
-		
+		padding: 10px 0 0 10px;
 		position: absolute;
 		top: 20px;
-		left: 0px;
+		left: 20px;
 	}
 
 	.mobile-nav-toggle {
@@ -956,11 +919,14 @@ section {
 		margin-top: 80px;
 	}
 
-	.destination-container {		
+	.destination-container {
+		
 		margin-top: 40px;
 	}
 
-	
+	.crew-text h3 {
+		font-size: 2.7rem;
+	}
 
 	.dot-indicators > * {
 		margin: 20px;
@@ -973,11 +939,6 @@ section {
 
 	img.landscape {
 		flex-shrink: 0;
-	}
-
-	.tech-container {
-		margin: 0;
-		width: 100%;
 	}
 }
 
@@ -1023,6 +984,10 @@ section {
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
+	}
+
+	.crew-text h3 {
+		font-size: 2.4rem;
 	}
 
 	.bg-tech-container {
