@@ -745,7 +745,9 @@ section {
 		background-size: cover;
 		background-position: center center;
 	}
-
+	.destination-title {
+		text-align: center;
+	}
 
 	.destination-container {
 		grid-template-columns: 1fr;
@@ -790,6 +792,10 @@ section {
 	.crew-text {
 		margin: 0;
 		max-width: 80vw;
+	}
+
+	.crew-text h3 {
+		font-size: 3rem;
 	}
 
 	.dot-indicators {
@@ -918,7 +924,9 @@ section {
 		margin-top: 40px;
 	}
 
-	
+	.crew-text h3 {
+		font-size: 2.7rem;
+	}
 
 	.dot-indicators > * {
 		margin: 20px;
@@ -976,6 +984,10 @@ section {
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
+	}
+
+	.crew-text h3 {
+		font-size: 2.4rem;
 	}
 
 	.bg-tech-container {
