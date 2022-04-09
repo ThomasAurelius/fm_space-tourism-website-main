@@ -833,6 +833,9 @@ section {
 
 	.bg-tech-container {
 		background-image: url('./assets/technology/background-technology-tablet.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
 	}
 
 	.tech-container {			
