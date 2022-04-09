@@ -22,7 +22,7 @@ blockquote,
 dl,
 dd {
 	margin: 0;
-	font-family: "Playfair Display";
+	font-family: "Barlow", serif;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -378,22 +378,13 @@ section {
 	--gap: 2rem;
 	--underline-gap: 2rem;
 	list-style: none;
-	padding: 20px 100px 20px 160px;
+	padding: 20px 100px 20px 120px;
 	margin: 0;
 	background-color: hsl(var(--clr-accent)/.08);
 	
 }
 
-.nav-header::after {
-	content: '';
-	display: block;
-	position: relative;
-	height: 1px;
-	width: 100%;
-	background: hsl(var(--clr-white) / 0.25);
-	order: -1;
-	margin-right: -3rem;
-}
+
 
 .logo {
 	order: -2;
@@ -617,14 +608,65 @@ section {
 	gap: 3rem;
 }
 
+/* ------------- */
+/* Crew          */
+/* ------------- */
 
+.bg-container-crew {
+	background-image: url('./assets/crew/background-crew-desktop.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.crew-text {
+	max-width: 45vw;
+	margin-right: 50px;
+}
+
+.crew-text h2 {
+	margin-top: 100px;
+	color:hsl(var(--clr-white) / 0.5)
+}
+
+.crew-text h3 {
+	margin-block: 30px;
+}
+
+.crew-text p {
+	line-height: 2rem;
+}
+
+.crew-img {
+	margin-top: -100px;
+}
+
+
+/* --------------- */
+/* Media Q - large */
+/* --------------- */
+
+@media (min-width: 950px) {
+	.nav-header::after {
+		content: '';
+		display: block;
+		position: relative;
+		height: 1px;
+		width: 100%;
+		background: hsl(var(--clr-white) / 0.25);
+		order: -1;
+		margin-right: -3rem;
+	}
+}
 
 /* ---------------- */
 /* Media Q - tablet */
 /* ---------------- */
 
-@media (max-width: 768px) {
-	body {
+
+
+@media (max-width: 950px) {
+	.bg-container-home {
 		background-image: url('./assets/home/background-home-tablet.jpg');
 	}
 
@@ -661,6 +703,13 @@ section {
 		margin-bottom: 50px;
 	}
 
+	.bg-container-destination {
+		background-image: url('./assets/destination/background-destination-tablet.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+
 	.destination-container {
 		grid-template-columns: 1fr;
 		margin-top: 40px;
@@ -674,6 +723,13 @@ section {
 	.tab-buttons {
 		justify-content: center;
 		
+	}
+
+	.bg-container-crew {
+		background-image: url('./assets/crew/background-crew-tablet.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
 	}
 }
 
@@ -796,6 +852,12 @@ section {
 		
 		width: 275px;
 		height: 275px;
+	}
+	.bg-container-crew {
+		background-image: url('./assets/crew/background-crew-mobile.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
 	}
 
 	
