@@ -30,7 +30,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](.//fm_space_landscape.png)
+![](.//fm_space_portrait.png)
 
 ### Links
 

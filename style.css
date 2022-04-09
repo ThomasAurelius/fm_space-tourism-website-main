@@ -783,6 +783,10 @@ section {
 		padding-bottom: 0;
 	}
 
+	.destination-title {
+		text-align: center;
+	}
+
 	.destination-text {
 		text-align: center;
 		margin: 0 auto;
@@ -831,11 +835,12 @@ section {
 		background-image: url('./assets/technology/background-technology-tablet.jpg');
 	}
 
-	
-
 	.tech-container {			
 		flex-direction: column;
-		
+	}
+
+	.tech-title {
+		text-align: center;
 	}
 
 	.portrait {
