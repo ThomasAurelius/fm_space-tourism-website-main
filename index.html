@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+<div class="bg-container-home">
+  <nav>
+    <div class="flex nav-header">
+      <div class="logo">
+        <img src="./assets/shared/logo.svg" alt="">
+      </div>
+      <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-controls="primary-navigation"
+        aria-expanded="false"><span class="sr-only">Menu</span></button>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+        <li class="active"><a class="text-white uppercase letter-spacing-2" href="./index.html"><span>00</span>Home</a>
+        </li>
+        <li><a class="text-white uppercase letter-spacing-2" href="./destination-moon.html"><span>01</span>Destination</a>
+        </li>
+        <li><a class="text-white uppercase letter-spacing-2" href="./crew-commander.html"><span>02</span>Crew</a></li>
+        <li><a class="text-white uppercase letter-spacing-2"
+            href="./technology-vehicle.html"><span>03</span>Technology</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+  
+    <main>
+      <div class="container home-container grid">
+        <div class="home-text">
+          <h1 class="fs-500 text-accent ff-sans-cond letter-spacing-1 uppercase">So, you want to travel to </h1>
+          <span class="uppercase fs-900 text-white ff-serif">space</span>
+          <p class="text-accent ff-sans-normal">
+            Let’s face it; if you want to go to space, you might as well genuinely go to
+            outer space and not hover kind of on the edge of it. Well sit back, and relax
+            because we’ll give you a truly out of this world experience!
+          </p>
+        </div>
+        <div class="flex interactive">
+          <div style="margin-top: 5rem;">
+            <!-- explore button -->
+            <a href="#" class="large-button uppercase bg-white text-dark fs-600">Explore</a>
+          </div>
+        </div>
+      </div>
+    </main>
+</div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
