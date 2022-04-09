@@ -372,6 +372,7 @@ section {
 
 .logo {
 	flex-shrink: 0;
+	margin-left: 30px;
 }
 
 .primary-navigation {
@@ -546,6 +547,7 @@ section {
 	grid-template-columns: 1fr 1fr ;
 	gap: 2rem;
 	width: 90vw;
+	padding: 0;
 	
 }
 .destination-title {
@@ -644,6 +646,35 @@ section {
 	flex-shrink: 0;
 }
 
+/* ------------------- */
+/* Technology          */
+/* ------------------- */
+
+.bg-tech-container {
+	background-image: url('./assets/technology/background-technology-desktop.jpg');
+}
+
+.landscape {
+	display: none;
+}
+
+.portrait {
+	max-width: 45vw;
+}
+
+.tech-container {
+	grid-template-columns: 1fr 3fr 3fr;
+	align-items: center;
+}
+
+.numbered-indicators {
+	margin:0 auto;
+	padding-inline: 30px;
+}
+
+.tech-text {
+	margin-right: 50px;;
+}
 
 
 
@@ -715,6 +746,7 @@ section {
 		background-position: center center;
 	}
 
+
 	.destination-container {
 		grid-template-columns: 1fr;
 		margin-top: 40px;
@@ -762,6 +794,52 @@ section {
 
 	.dot-indicators {
 		justify-content: center;		
+	}
+
+	.bg-tech-container {
+		background-image: url('./assets/technology/background-technology-tablet.jpg');
+	}
+
+	
+
+	.tech-container {			
+		flex-direction: column;
+	}
+
+	.portrait {
+		display: none
+	}
+	
+	.landscape {
+		display: block;
+		order: 1;
+		width: 100%;
+	}
+
+	.numbered-indicators {
+		order: 2;
+		flex-direction: row;
+		margin-block: 0;
+	}
+
+	.tech-text {
+		order: 3;
+		margin: 0 auto;
+		text-align: center;
+		max-width: 65%;
+		line-height: 2rem;;
+	}
+
+	.tech-text h3 {
+		margin-block: 20px;
+	}
+
+	.tech-text p {
+		margin-bottom: 50px;
+	}
+
+	.tech-img {
+		width: 100%
 	}
 }
 
@@ -840,15 +918,19 @@ section {
 		margin-top: 40px;
 	}
 
-	.bg-container-destination {
-		background-image: url('./assets/destination/background-destination-tablet.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center center;
-	}
+	
 
 	.dot-indicators > * {
 		margin: 20px;
+	}
+
+	.bg-tech-container {
+		background-image: url('./assets/technology/background-technology-mobile.jpg');
+	
+	}
+
+	img.landscape {
+		flex-shrink: 0;
 	}
 }
 
@@ -894,6 +976,10 @@ section {
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
+	}
+
+	.bg-tech-container {
+		background-image: url('./assets/technology/background-technology-mobile.jpg');
 	}
 
 	
