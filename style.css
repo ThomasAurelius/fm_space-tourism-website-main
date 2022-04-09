@@ -514,8 +514,9 @@ section {
 .home-container {
 	margin-top: 0;
 	grid-template-columns: 1fr 1fr;
-	margin-top: 15vh;
+	margin-top: 20vh;
 	padding-bottom: 50px;
+	padding-bottom: 25vh;
 }
 
 .home-text {
@@ -547,7 +548,7 @@ section {
 	gap: 2rem;
 	width: 90vw;
 	padding: 0;
-	
+	padding-bottom: 15vh;
 }
 .destination-title {
 	margin-top: 50px;
@@ -621,6 +622,13 @@ section {
 	background-position: center center;
 }
 
+.crew-title-container {
+	
+	width: 90vw;
+	padding: 0;
+	
+}
+
 .crew-text {
 	max-width: 45vw;
 	margin-right: 50px;
@@ -651,7 +659,35 @@ section {
 
 .bg-tech-container {
 	background-image: url('./assets/technology/background-technology-desktop.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 }
+
+.tech-container {
+	grid-template-columns: 1fr 3fr 3fr;
+	gap: 2rem;
+	align-items: center;
+	padding: 0;
+	width: 100%;
+}
+
+.tech-title-container {
+	margin-left: 20px;
+}
+
+.tech-title {
+	margin-top: 50px;
+	margin-bottom: 40px;
+
+}
+
+.tech-title span {
+	color: hsl(var(--clr-white) / 0.25);
+	font-weight: 700;
+}
+
+
 
 .landscape {
 	display: none;
@@ -661,10 +697,6 @@ section {
 	max-width: 45vw;
 }
 
-.tech-container {
-	grid-template-columns: 1fr 3fr 3fr;
-	align-items: center;
-}
 
 .numbered-indicators {
 	margin:0 auto;
@@ -745,10 +777,10 @@ section {
 		background-position: center center;
 	}
 
-
 	.destination-container {
 		grid-template-columns: 1fr;
 		margin-top: 40px;
+		padding-bottom: 0;
 	}
 
 	.destination-text {
@@ -803,6 +835,7 @@ section {
 
 	.tech-container {			
 		flex-direction: column;
+		
 	}
 
 	.portrait {
@@ -812,7 +845,7 @@ section {
 	.landscape {
 		display: block;
 		order: 1;
-		width: 100%;
+		width: 100vw;
 	}
 
 	.numbered-indicators {
@@ -837,9 +870,12 @@ section {
 		margin-bottom: 50px;
 	}
 
-	.tech-img {
-		width: 100%
+	.tech-container {
+		margin: 0;
+		width: 100%;
 	}
+
+	
 }
 
 @media (max-width: 650px) {
@@ -878,10 +914,10 @@ section {
 	}
 
 	.logo {
-		padding: 10px 0 0 10px;
+		
 		position: absolute;
 		top: 20px;
-		left: 20px;
+		left: 0px;
 	}
 
 	.mobile-nav-toggle {
@@ -912,8 +948,7 @@ section {
 		margin-top: 80px;
 	}
 
-	.destination-container {
-		
+	.destination-container {		
 		margin-top: 40px;
 	}
 
@@ -930,6 +965,11 @@ section {
 
 	img.landscape {
 		flex-shrink: 0;
+	}
+
+	.tech-container {
+		margin: 0;
+		width: 100%;
 	}
 }
 
