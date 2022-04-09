@@ -460,6 +460,7 @@ section {
 .dot-indicators > *:hover,
 .dot-indicators > *:focus {
 	background-color: hsl(var(--clr-accent));
+	
 }
 
 .dot-indicators > [aria-selected="true"] {
@@ -625,7 +626,7 @@ section {
 }
 
 .crew-text h2 {
-	margin-top: 100px;
+	margin-top: 40px;
 	color:hsl(var(--clr-white) / 0.5)
 }
 
@@ -637,9 +638,13 @@ section {
 	line-height: 2rem;
 }
 
-.crew-img {
+.crew-img-container {
 	margin-top: -100px;
+	position: relative;
+	flex-shrink: 0;
 }
+
+
 
 
 /* --------------- */
@@ -731,6 +736,33 @@ section {
 		background-size: cover;
 		background-position: center center;
 	}
+
+	.crew-container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+	}
+
+	.crew-img-container {
+		flex-shrink: 1;
+		margin-top: 10px;
+	}
+
+	.crew-img {
+		height: 400px;
+	}
+
+	.crew-text {
+		margin: 0;
+		max-width: 80vw;
+	}
+
+	.dot-indicators {
+		justify-content: center;		
+	}
 }
 
 @media (max-width: 650px) {
@@ -813,6 +845,10 @@ section {
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
+	}
+
+	.dot-indicators > * {
+		margin: 20px;
 	}
 }
 
