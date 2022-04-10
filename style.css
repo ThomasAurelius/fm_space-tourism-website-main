@@ -382,18 +382,18 @@ section {
 	list-style: none;
 	padding: 20px 100px 20px 120px;
 	margin: 0;
-	background-color: hsl(var(--clr-accent)/.08);
+	background-color: hsl(var(--clr-accent)/.18);
 	
 }
 
 
 
-@supports (backdrop-filter: blur(1rem)) {
+/* @supports (backdrop-filter: blur(1rem)) {
 	.primary-navigation {
 		background: hsl(var(--clr-white) / 0.05);
 		backdrop-filter: blur(1.5rem);
 	}
-}
+} */
 
 .primary-navigation a {
 	text-decoration: none;
@@ -878,6 +878,7 @@ section {
 		padding-top: 150px;
 		transform: translateX(100%);
 		transition: transform .4s ease;
+		background-color: hsl(var(--clr-dark) / 0.85)
 	}
 
 	.primary-navigation[data-visible="true"] {
