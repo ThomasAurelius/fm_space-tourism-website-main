@@ -224,6 +224,21 @@ section {
 	width: 1px;
 }
 
+.skip-to-content {
+	position: absolute;
+	z-index: 9999;
+	background-color: hsl(var(--clr-white));
+	color: hsl(var(--clr-dark));
+	padding: .5em 1em;
+	margin-inline: auto;
+	transform: translateY(-100%);
+	transition: transform 250ms ease-in;
+}
+
+.skip-to-content:focus {
+	transform: translateY(0);
+}
+
 /* apply to everything but the first child */
 .flow > *:not(:first-child) {
 	margin-top: 1rem var(--flow-space, 1rem);
