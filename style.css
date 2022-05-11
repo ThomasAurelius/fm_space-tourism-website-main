@@ -522,6 +522,7 @@ section {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+	height: 100vh;
 }
 
 .home-container {
@@ -553,6 +554,7 @@ section {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+	height: 100vh;
 }
 
 .destination-container {
@@ -632,6 +634,7 @@ section {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+	height: 100vh;
 }
 
 .crew-text {
@@ -653,8 +656,6 @@ section {
 }
 
 .crew-img-container {
-	margin-top: -100px;
-	position: relative;
 	flex-shrink: 0;
 }
 
@@ -667,6 +668,7 @@ section {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+	height: 100vh;
 }
 
 .landscape {
