@@ -198,6 +198,8 @@ section {
 
 /* General */
 
+
+
 .flex {
 	display: flex;
 	gap: var(--gap, 1rem);
@@ -212,6 +214,7 @@ section {
 	padding-inline: 2em;
 	max-width: 80rem;
 	margin-inline: auto;
+	height: 100%;
 }
 
 .sr-only:not(:focus):not(:active) {
@@ -343,6 +346,7 @@ section {
 /* ---------------- */
 /* Components       */
 /* ---------------- */
+
 
 .interactive {
 	justify-content: space-around;
@@ -513,6 +517,7 @@ section {
 	outline: 1px solid hsl(var(--clr-white));
 }
 
+
 /* ----------- */
 /* HOME        */
 /* ----------- */
@@ -637,9 +642,18 @@ section {
 	height: 100vh;
 }
 
+.crew-container {
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
+	width: 90vw;
+	padding: 0;
+	height: 100%;
+}
+
 .crew-text {
 	max-width: 45vw;
 	margin-right: 50px;
+	height: 100%;
 }
 
 .crew-text h2 {
@@ -658,6 +672,8 @@ section {
 .crew-img-container {
 	flex-shrink: 0;
 }
+
+
 
 /* ------------------- */
 /* Technology          */
